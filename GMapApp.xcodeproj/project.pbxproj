@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1F9A66E65B671E2AE14DD7 /* libPods-GMapApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5A2EC6B7322277031003CC /* libPods-GMapApp.a */; };
 		3F39993C1EF3BA370055FEB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F39993B1EF3BA370055FEB9 /* main.m */; };
 		3F39993F1EF3BA370055FEB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F39993E1EF3BA370055FEB9 /* AppDelegate.m */; };
 		3F3999421EF3BA370055FEB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3999411EF3BA370055FEB9 /* ViewController.m */; };
@@ -26,6 +27,9 @@
 		3F3999461EF3BA370055FEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3999491EF3BA370055FEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F39994B1EF3BA370055FEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5A2EC6B7322277031003CC /* libPods-GMapApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMapApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A501A2C9CD173ECD802DB932 /* Pods-GMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMapApp/Pods-GMapApp.release.xcconfig"; sourceTree = "<group>"; };
+		AF2C2572D6492A62925CD3C6 /* Pods-GMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMapApp/Pods-GMapApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1F9A66E65B671E2AE14DD7 /* libPods-GMapApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C913F5A048C28D8F6E0948 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C2572D6492A62925CD3C6 /* Pods-GMapApp.debug.xcconfig */,
+				A501A2C9CD173ECD802DB932 /* Pods-GMapApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3F39992E1EF3BA370055FEB9 = {
 			isa = PBXGroup;
 			children = (
 				3F3999391EF3BA370055FEB9 /* GMapApp */,
 				3F3999381EF3BA370055FEB9 /* Products */,
+				00C913F5A048C28D8F6E0948 /* Pods */,
+				DAA7B44CA2B55D37781CD0A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DAA7B44CA2B55D37781CD0A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A2EC6B7322277031003CC /* libPods-GMapApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F39994E1EF3BA370055FEB9 /* Build configuration list for PBXNativeTarget "GMapApp" */;
 			buildPhases = (
+				D3A10C1D13DED4934C3A6A5D /* [CP] Check Pods Manifest.lock */,
 				3F3999331EF3BA370055FEB9 /* Sources */,
 				3F3999341EF3BA370055FEB9 /* Frameworks */,
 				3F3999351EF3BA370055FEB9 /* Resources */,
+				A9FACA0A9A27522A195A65D8 /* [CP] Embed Pods Frameworks */,
+				DC5F05AEE523451E07988F57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9FACA0A9A27522A195A65D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapApp/Pods-GMapApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A10C1D13DED4934C3A6A5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC5F05AEE523451E07988F57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapApp/Pods-GMapApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F3999331EF3BA370055FEB9 /* Sources */ = {
@@ -268,6 +343,7 @@
 		};
 		3F39994F1EF3BA370055FEB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2C2572D6492A62925CD3C6 /* Pods-GMapApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GMapApp/Info.plist;
@@ -279,6 +355,7 @@
 		};
 		3F3999501EF3BA370055FEB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A501A2C9CD173ECD802DB932 /* Pods-GMapApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GMapApp/Info.plist;
